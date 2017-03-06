@@ -44,6 +44,7 @@ namespace Midterm
                 if (A[i]%3 == 0 && A[i] % 5 != 0)
                 {
                     Console.WriteLine(A[i]);
+                    Console.ReadKey();
                 }
             }
         }
