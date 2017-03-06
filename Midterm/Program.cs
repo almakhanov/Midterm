@@ -10,7 +10,32 @@ namespace Midterm
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+            int[] A = new int[args.Length];
+
+            for (int i = 0; i < args.Length; i++)
+            {
+                A[i] = int.Parse(args[i]);
+            }
+
+            Console.WriteLine("divisible by 3");
+
+            for (int i = 0; i < args.Length; i++) // divisible by 3
+            {
+                if(A[i]%3 == 0)
+                {
+                    Console.WriteLine(A[i]);
+                }
+            }
+
+            Console.WriteLine("not divisible by 5");
+
+            for (int i = 0; i < args.Length; i++) // not divisible by 5
+            {
+                if (A[i] % 5 != 0)
+                {
+                    Console.WriteLine(A[i]);
+                }
+            }
         }
     }
 }
