@@ -36,6 +36,16 @@ namespace Midterm
                     Console.WriteLine(A[i]);
                 }
             }
+
+            Console.WriteLine("divisible by 3 but not divisible by 5");
+
+            for (int i = 0; i < args.Length; i++) // divisible by 3 but not divisible by 5
+            {
+                if (A[i]%3 == 0 && A[i] % 5 != 0)
+                {
+                    Console.WriteLine(A[i]);
+                }
+            }
         }
     }
 }
